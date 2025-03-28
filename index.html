@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketchify — Студенческие боксы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sketchify</h1>
+        <nav>
+            <a href="#catalog">Каталог</a>
+            <a href="#order">Оформить заказ</a>
+            <a href="#loyalty">Программа лояльности</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Удобные, доступные и стильные боксы для студентов</h2>
+        <p class="banner">
+            <img src="6664E82E-62A4-4F50-B258-4B097F58DF9C.png" alt="heart"> Каждый 5-й заказ бесплатно!
+          </p>
+        <div class="buttons">
+            <a href="#catalog" class="btn">Выбрать бокс</a>
+            <a href="#custom" class="btn">Собрать свой набор</a>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h2>Отзывы студентов</h2>
+        <blockquote>«Sketchify — это просто спасение во время сессии!» — Айгерим</blockquote>
+        <blockquote>«Беру уже второй бокс. Качество супер!» — Нурлан</blockquote>
+    </section>
+
+    <section id="catalog" class="catalog">
+        <h2>Каталог боксов</h2>
+        <div class="box">
+            <h3>Бюджетный — 3990₸</h3>
+            <ul>
+                <li>Блокнот (48 листов)</li>
+                <li>Ручка, карандаш, ластик</li>
+                <li>Стикеры для заметок</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Обычный — 5990₸</h3>
+            <ul>
+                <li>2 блокнота (80 листов)</li>
+                <li>2 ручки, карандаш, ластик, точилка</li>
+                <li>Маркер, пауэр-банк</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Pro — 8990₸</h3>
+            <ul>
+                <li>3 блокнота (100 листов)</li>
+                <li>Набор ручек, маркеры, ежедневник</li>
+                <li>Пауэр-банк, флешка, термокружка</li>
+            </ul>
+        </div>
+        <div class="box custom">
+            <h3><a href="#custom">Собери свой бокс</a></h3>
+        </div>
+    </section>
+
+    <section id="custom" class="custom-box">
+        <h2>Собери свой бокс</h2>
+        <form>
+            <div class="item">
+                <label><input type="checkbox" name="items" value="Блокнот"> Блокнот</label>
+                <span>300₸</span>
+            </div>
+            <div class="item">
+                <label><input type="checkbox" name="items" value="Ручка"> Ручка</label>
+                <span>200₸</span>
+            </div>
+            <div class="item">
+                <label><input type="checkbox" name="items" value="Карандаш"> Карандаш</label>
+                <span>150₸</span>
+            </div>
+            <div class="item">
+                <label><input type="checkbox" name="items" value="Маркер"> Маркер</label>
+                <span>500₸</span>
+            </div>
+            <div class="item">
+                <label><input type="checkbox" name="items" value="Пауэр-банк"> Пауэр-банк</label>
+                <span>2500₸</span>
+            </div>
+            <div class="item">
+                <label><input type="checkbox" name="items" value="Флешка"> Флешка</label>
+                <span>1500₸</span>
+            </div>
+            <div class="item">
+                <label><input type="checkbox" name="items" value="Термокружка"> Термокружка</label>
+                <span>2000₸</span>
+            </div>
+            <button type="submit">Добавить в корзину</button>
+        </form>
+    </section>
+
+    <section id="order" class="order">
+        <h2>Оформление заказа</h2>
+        <form>
+            <label>Имя: <input type="text" required></label>
+            <label>Телефон: <input type="tel" required></label>
+            <label>Email (по желанию): <input type="email"></label>
+            <label>Адрес доставки: <input type="text"></label>
+
+            <p>Способ получения:</p>
+            <label><input type="radio" name="delivery" checked> Самовывоз</label>
+            <label><input type="radio" name="delivery"> Курьерская доставка</label>
+
+            <p>Оплата:</p>
+            <label><input type="radio" name="payment" checked> Онлайн-оплата <span>(Каспи переводы принимаются: +7 775
+                    781 15 10)</span></label>
+            <label><input type="radio" name="payment"> Наличными</label>
+
+            <button type="submit">Оформить заказ</button>
+        </form>
+    </section>
+
+    <section id="loyalty" class="loyalty">
+        <h2>Программа лояльности</h2>
+        <ul>
+            <li>Каждый 5-й заказ — бесплатно</li>
+            <li>Скидки за рекомендации друзьям</li>
+            <li>Бонусы за отзывы</li>
+        </ul>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <h2>Контакты и поддержка</h2>
+        <form>
+            <label>Ваше сообщение:<br>
+                <textarea rows="4" required></textarea>
+            </label>
+            <button type="submit">Отправить</button>
+        </form>
+        <p>Чат-бот: <a href="#">Написать</a></p>
+        <p>Мы в соцсетях: <a href="">Telegram</a>, <a href="https://www.instagram.com/darkkezzz/">Instagram</a></p>
+        <!-- Добавь сюда ссылки на свои соцсети -->
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sketchify — Все права защищены</p>
+    </footer>
+</body>
+
+</html>
